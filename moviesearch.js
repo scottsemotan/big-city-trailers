@@ -31,7 +31,7 @@ var granimInstance = new Granim({
 
 var movieBody = document.getElementById('movieBody');
 var submitButton = document.getElementById('submitButton')
-var oMDB = 'c366972e'
+var oMDB = '5461b7f0'
 var tasteDive = '380370-BigCityT-ZF132C2Q'
 var cards = document.getElementById("cards")
 

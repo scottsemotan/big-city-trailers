@@ -1,5 +1,5 @@
 {
-  "name": "listen-while-reading",
+  "name": "big-city-trailers",
   "version": "1.0.0",
   "description": "CSS - BootStrap/Materialize",
   "main": "index.html",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scottsemotan/listen-while-reading.git"
+    "url": "git+https://github.com/scottsemotan/big-city-trailers"
   },
   "author": "Scott/Marcel/Rhonda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/scottsemotan/listen-while-reading/issues"
+    "url": "https://github.com/scottsemotan/big-city-trailers"
   },
-  "homepage": "https://github.com/scottsemotan/listen-while-reading#readme"
+  "homepage": "https://github.com/scottsemotan/big-city-trailers#readme"
 }
