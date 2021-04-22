@@ -4,13 +4,13 @@ var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'left-right',
     isPausedWhenNotInView: true,
-    image : {
+    image: {
         source: '/images/city.png',
         position: ['center', 'bottom'],
-        blendingMode: 'multiply', 
+        blendingMode: 'multiply',
         stretchMode: ['stretch-if-smaller', 'none']
     },
-    states : {
+    states: {
         "default-state": {
             gradients: [
                 [
@@ -63,7 +63,7 @@ function movieSearch(searchString) {
 
     cards.innerHTML = '';
     
-    $.get(`https://cors-anywhere.herokuapp.com/https://tastedive.com/api/similar?limit=1&info=1&q=movie:${searchString}&k=${tasteDive}`, function (data1) {
+    $.get(`https://cors.bridged.cc/https://tastedive.com/api/similar?limit=1&info=1&q=movie:${searchString}&k=${tasteDive}`, function (data1) {
         console.log(data1);
         for (var j = 0; j < data1.Similar.Info.length; j++) {
             var name = data1.Similar.Info[j].Name;
@@ -75,7 +75,7 @@ function movieSearch(searchString) {
                 console.log(data);
                 var poster = data.Search[0].Poster;
 
-                $.get(`https://cors-anywhere.herokuapp.com/https://itunes.apple.com/search?term=${name}&country=US&media=movie&limit=1`, function (iTunes) {
+                $.get(`https://cors.bridged.cc/https://itunes.apple.com/search?term=${name}&country=US&media=movie&limit=1`, function (iTunes) {
                     var appleTv = JSON.parse(iTunes)
                     console.log(appleTv);
                     var rentMovie = appleTv.results[0].trackViewUrl;
